@@ -20,6 +20,9 @@ public class EmsDepServiceImpl implements EmsDepService {
     public List<Department> findAllDep() {
         List<Department> allDep = departmentDao.findAllDep();
         System.out.println("1");
+System.out.println("1");
+System.out.println("1");
+System.out.println("1");
         return allDep;
     }
 
