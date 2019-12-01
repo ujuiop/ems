@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <include file="com/baizhi/struts/DepStruts.xml"></include>
+    <package name="user" extends="struts-default" namespace="/user">
+        <action name="*" class="emsUserAction" method="{1}">
+            <result name="loginSuccess" type="chain">
+                <param name="namespace">/dep</param>
+                <param name="actionName">findAll</param>
+            </result>
+            <result name="loginError">/login.jsp</result>
+        </action>
+    </package>
+</struts>
