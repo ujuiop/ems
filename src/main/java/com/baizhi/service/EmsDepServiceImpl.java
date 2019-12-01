@@ -19,6 +19,7 @@ public class EmsDepServiceImpl implements EmsDepService {
     @Override
     public List<Department> findAllDep() {
         List<Department> allDep = departmentDao.findAllDep();
+        System.out.println("1");
         return allDep;
     }
 
